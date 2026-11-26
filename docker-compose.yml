@@ -1,0 +1,20 @@
+
+services:
+  valkey-1:
+    container_name: "valkey-alias1"
+    hostname: "valkey-alias1"
+    image: "seffeng/valkey"
+    ports:
+      - "6379:6379"
+    networks:
+      network-01:
+        aliases:
+          - valkey-net1
+    volumes:
+      - "/opt/websrv/data/valkey:/opt/websrv/data/valkey"
+      - "/opt/websrv/tmp:/opt/websrv/tmp"
+
+networks:
+  network-01:
+    driver: bridge
+    name: network-01
