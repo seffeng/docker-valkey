@@ -1,4 +1,4 @@
-FROM registry.cn-shenzhen.aliyuncs.com/seffeng/alpine:3.24
+FROM seffeng/alpine:3.24
 
 LABEL author="zxf <seffeng@live.com>"
 
