@@ -2,7 +2,7 @@
 
 ## 版本
 
-* [9.2 , 9.2.0 , latest](https://github.com/seffeng/docker-valkey/tree/9.2)
+* [9.2](https://github.com/seffeng/docker-valkey/tree/9.2)
 
 ## 常用命令：
 
