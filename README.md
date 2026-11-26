@@ -37,7 +37,7 @@ $ docker images
 # 删除镜像
 $ docker rmi [IMAGE ID]
 ```
-#### 备注
+## 备注
 
 ```shell
 # 建议容器之间使用网络互通
@@ -47,3 +47,6 @@ $ docker network create network-01
 ## 运行容器增加 --network network-01 --network-alias [name-net-alias]
 $ docker run --name valkey-alias1 --network network-01 --network-alias valkey-alias1 -d -p 6379:6379 -v /opt/websrv/data/valkey:/opt/websrv/data/valkey -v /opt/websrv/tmp:/opt/websrv/tmp seffeng/valkey
 ```
+---
+
+* [版本维护周期](https://valkey.io/topics/releases/#list-of-supported-versions)
